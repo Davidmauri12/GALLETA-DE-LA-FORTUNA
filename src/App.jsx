@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import phrases from './phrases.json';
-import './app.css';
 import { bg1, bg2, bg3, bg4 } from './assets/images';
+import './app.css';
 
 const images = [bg1, bg2, bg3, bg4];
 function getRandomIndex(arr) {
