@@ -1,8 +1,8 @@
 .wrapper {
-	border: 2px solid black;
 	min-height: 100dvh;
 	display: grid;
 	place-content: center;
+	background-size: cover;
 }
 
 .container {
@@ -18,7 +18,7 @@
 	font-size: 38px;
 	text-align: center;
 	color: whitesmoke;
-	text-shadow: 3px 3px 1px black;
+	text-shadow: 4px 4px 2px black;
 	margin: 0;
 }
 @media (min-width: 768px) {
@@ -27,42 +27,49 @@
 	}
 }
 .card {
-	border: 2px solid rgba(0, 0, 0, 0);
 	max-width: 600px;
 	height: 250px;
 	background-image: url('/rectangle1.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0;
+
 	display: grid;
 	place-content: center;
-	background-position-x: 30px;
+	background-position: center;
 }
 @media (min-width: 768px) {
 	.card {
 		background-size: contain;
 	}
 }
-.car__body {
+.card__body {
 	padding: 0;
 }
 .card__phrases {
-	margin: 0;
 	font-size: 18px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: rgb(59, 64, 68);
 	padding: 0 2.5em;
 	margin: 0 auto;
+	text-align: justify;
+	line-height: 1.6;
 }
 .card__btn {
 	width: fit-content;
 	font-size: 15px;
 	margin: 0 auto;
-	padding: 0.5em 1.5em;
+	padding: 0.75em 2em;
 	background-color: rgba(245, 245, 245, 0.399);
-	border: 2px solid white;
 	-webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);
+	border: 2px solid white;
 	border-radius: 12px;
 	cursor: pointer;
+}
+
+/* es para darle una animacion minima cuando el usuario acerca el cursor al boton */
+.card__btn:hover {
+	background-color: rgba(255, 255, 255, 0.718);
+	color: rgb(0, 0, 0);
+	border-color: rgba(40, 0, 0, 0.715);
 }

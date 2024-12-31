@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import phrases from './phrases.json';
-import { BiSolidQuoteAltRight } from 'react-icons/bi';
+
 import { bg1, bg2, bg3, bg4 } from './assets/images';
 import './app.css';
 const images = [bg1, bg2, bg3, bg4];
@@ -27,7 +27,6 @@ function App() {
 						<p className="card__phrases">"{phrase}"</p>
 					</div>
 				</blockquote>
-
 				<button className="card__btn" onClick={handleClick}>
 					Ver Otro
 				</button>
