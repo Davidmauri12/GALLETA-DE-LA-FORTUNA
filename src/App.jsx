@@ -2,7 +2,6 @@ import { useState } from 'react';
 import phrases from './phrases.json';
 import { bg1, bg2, bg3, bg4 } from './assets/images';
 import './App.css';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const images = [bg1, bg2, bg3, bg4];
 function getRandomIndex(arr) {
@@ -22,7 +21,7 @@ function App() {
 		<div className="wrapper" style={{ backgroundImage: bgStyle }}>
 			<div className="container">
 				<h1 className="title">GALLETA DE LA FORTUNA</h1>
-				<SpeedInsights />
+
 				<blockquote className="card">
 					<div className="card__body">
 						<p className="card__phrases">"{phrase}"</p>
